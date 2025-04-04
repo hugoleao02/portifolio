@@ -1,0 +1,35 @@
+{
+  "nav": [
+    {
+      "label": "Início",
+      "href": "/"
+    },
+    {
+      "label": "Projetos",
+      "href": "/projetos"
+    },
+    {
+      "label": "Certificações",
+      "href": "/certificacoes"
+    },
+    {
+      "label": "Contato",
+      "href": "/contato",
+      "isButton": true
+    }
+  ],
+  "footer": [
+    {
+      "label": "GitHub",
+      "href": "https://github.com/hugoleao02"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://linkedin.com/in/hugoleao02"
+    },
+    {
+      "label": "Email",
+      "href": "mailto:hugoleao02@example.com"
+    }
+  ]
+} 

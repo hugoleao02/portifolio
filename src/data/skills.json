@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "category": "Backend",
+      "items": [
+        { "name": "Java", "level": "Intermediário", "icon": "☕" },
+        { "name": "Spring Boot", "level": "Intermediário", "icon": "🍃" },
+        { "name": "APIs REST", "level": "Intermediário", "icon": "🔌" },
+        { "name": "JPA/Hibernate", "level": "Intermediário", "icon": "💾" }
+      ]
+    },
+    {
+      "category": "Banco de Dados",
+      "items": [
+        { "name": "MySQL", "level": "Intermediário", "icon": "🗄️" },
+        { "name": "PostgreSQL", "level": "Intermediário", "icon": "🐘" }
+      ]
+    },
+    {
+      "category": "DevOps & Ferramentas",
+      "items": [
+        { "name": "Git", "level": "Intermediário", "icon": "📦" },
+        { "name": "Docker", "level": "Intermediário", "icon": "🐳" },
+        { "name": "Maven", "level": "Intermediário", "icon": "🎯" }
+      ]
+    }
+  ]
+} 

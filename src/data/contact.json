@@ -1,0 +1,10 @@
+{
+  "email": "hugoleao02@example.com",
+  "phone": "+55 (11) 99999-9999",
+  "address": "São Paulo, SP - Brasil",
+  "social": {
+    "github": "https://github.com/hugoleao02",
+    "linkedin": "https://linkedin.com/in/hugoleao02",
+    "twitter": "https://twitter.com/hugoleao02"
+  }
+} 

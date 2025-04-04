@@ -1,53 +1,56 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { Project } from '../../types/projects';
+import { COLORS, SIZES, ANIMATIONS } from '../../styles';
 
 interface ProjetoCardProps {
-  titulo: string;
-  descricao: string;
-  tecnologias: string[];
-  link: string;
-  icone: string;
-  imagem: string;
+  project: Project;
+  index: number;
 }
 
-export default function ProjetoCard({ titulo, descricao, tecnologias, link, icone, imagem }: ProjetoCardProps) {
+export default function ProjetoCard({ project, index }: ProjetoCardProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+      {...ANIMATIONS.slideIn}
+      transition={{ delay: index * 0.1 }}
+      className={`${COLORS.white.bg} ${SIZES.rounded.large} shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300`}
     >
       <div className="relative h-48 w-full">
         <Image
-          src={imagem}
-          alt={titulo}
+          src={project.imagem}
+          alt={project.titulo}
           fill
           className="object-cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
-      <div className="p-6">
+      <div className={`${SIZES.padding.card}`}>
         <div className="flex items-start gap-4">
-          <div className="text-4xl">{icone}</div>
-          <div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">{titulo}</h3>
-            <p className="text-gray-600 mb-4">{descricao}</p>
-            <div className="flex flex-wrap gap-2">
-              {tecnologias.map((tech, techIdx) => (
+          <div className={`text-4xl bg-gradient-to-br ${COLORS.primary.blue} p-4 ${SIZES.rounded.medium}`}>
+            {project.icone}
+          </div>
+          <div className="flex-1">
+            <h3 className={`font-semibold ${COLORS.dark.text} ${SIZES.text.h4} mb-2`}>
+              {project.titulo}
+            </h3>
+            <p className={`${COLORS.secondary.text} mb-4`}>
+              {project.descricao}
+            </p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              {project.tecnologias.map((tech, techIdx) => (
                 <span
                   key={techIdx}
-                  className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                  className={`px-2 py-1 ${SIZES.text.small} ${SIZES.rounded.full} ${COLORS.primary.bg} ${COLORS.white.text}`}
                 >
                   {tech}
                 </span>
               ))}
             </div>
             <a
-              href={link}
+              href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center text-blue-600 hover:text-blue-800"
+              className={`inline-flex items-center ${COLORS.primary.text} ${COLORS.primary.hover.text} transition-colors`}
             >
               Ver Projeto
               <svg

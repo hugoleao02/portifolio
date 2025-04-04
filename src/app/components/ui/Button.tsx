@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { COLORS } from '../../constants/styles';
+import { COLORS } from '../../../styles';
 
 interface ButtonProps {
   href: string;
@@ -9,7 +9,7 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
-export const Button = ({ 
+const Button = ({ 
   href, 
   children, 
   variant = 'primary', 
@@ -33,4 +33,6 @@ export const Button = ({
       {children}
     </Link>
   );
-}; 
+};
+
+export default Button; 
