@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center">
-            <span className="font-bold text-xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="font-bold text-lg sm:text-xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               HUGO FERREIRA
             </span>
           </Link>
@@ -34,8 +34,9 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-600"
+            className="md:hidden text-gray-600 p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Menu"
           >
             <svg
               className="w-6 h-6"
@@ -67,28 +68,28 @@ export default function Navbar() {
           <div className="md:hidden py-4 space-y-4">
             <Link
               href="/"
-              className="block text-gray-600 hover:text-blue-600 transition duration-300"
+              className="block text-gray-600 hover:text-blue-600 transition duration-300 py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Início
             </Link>
             <Link
               href="/projetos"
-              className="block text-gray-600 hover:text-blue-600 transition duration-300"
+              className="block text-gray-600 hover:text-blue-600 transition duration-300 py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Projetos
             </Link>
             <Link
               href="/certificacoes"
-              className="block text-gray-600 hover:text-blue-600 transition duration-300"
+              className="block text-gray-600 hover:text-blue-600 transition duration-300 py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Certificações
             </Link>
             <Link
               href="/contato"
-              className="block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300 text-center"
+              className="block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300 text-center mt-4"
               onClick={() => setIsMenuOpen(false)}
             >
               Contato

@@ -69,26 +69,27 @@ export default function Home() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
+              className="text-center md:text-left"
             >
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   Desenvolvedor Java Backend
                 </span>
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-lg sm:text-xl text-gray-600 mb-8">
                 Especializado em desenvolvimento de APIs RESTful e microsserviços com Spring Boot.
                 Focado em criar soluções escaláveis e de alta qualidade.
               </p>
-              <div className="flex gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <Link 
                   href="/projetos"
-                  className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
+                  className="bg-blue-600 text-white px-6 sm:px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 text-center"
                 >
                   Ver Projetos
                 </Link>
                 <Link
                   href="/contato"
-                  className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 transition duration-300"
+                  className="border-2 border-blue-600 text-blue-600 px-6 sm:px-8 py-3 rounded-lg hover:bg-blue-50 transition duration-300 text-center"
                 >
                   Contato
                 </Link>
@@ -98,9 +99,9 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="relative"
+              className="relative mt-8 md:mt-0"
             >
-              <div className="aspect-square rounded-full overflow-hidden border-4 border-white shadow-xl max-w-md mx-auto">
+              <div className="aspect-square rounded-full overflow-hidden border-4 border-white shadow-xl max-w-xs sm:max-w-sm md:max-w-md mx-auto">
                 <Image
                   src="/images/profile.png"
                   alt="Hugo Ferreira"
@@ -110,8 +111,8 @@ export default function Home() {
                   priority
                 />
               </div>
-              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-white px-6 py-2 rounded-full shadow-lg">
-                <p className="text-blue-600 font-semibold">Disponível para projetos</p>
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-white px-4 sm:px-6 py-2 rounded-full shadow-lg">
+                <p className="text-blue-600 font-semibold text-sm sm:text-base">Disponível para projetos</p>
               </div>
             </motion.div>
           </div>
@@ -128,11 +129,11 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Habilidades Técnicas</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Habilidades Técnicas</h2>
             <p className="text-gray-600">Tecnologias que utilizo no desenvolvimento</p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {skills.map((category, idx) => (
               <motion.div
                 key={idx}
@@ -170,11 +171,11 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Projetos em Destaque</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Projetos em Destaque</h2>
             <p className="text-gray-600">Principais projetos desenvolvidos</p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {highlightedProjects.map((project, idx) => (
               <motion.a
                 key={idx}
@@ -238,11 +239,11 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Perfil Profissional</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Perfil Profissional</h2>
             <p className="text-gray-600">Minha trajetória e objetivos</p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -305,16 +306,16 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-12 text-white"
+            className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-6 sm:p-12 text-white"
           >
-            <h2 className="text-3xl font-bold mb-4">Vamos Trabalhar Juntos?</h2>
-            <p className="text-lg mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4">Vamos Trabalhar Juntos?</h2>
+            <p className="text-base sm:text-lg mb-8">
               Estou disponível para novos projetos e oportunidades.
               Entre em contato para conversarmos!
             </p>
             <Link
               href="/contato"
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 transition duration-300"
+              className="bg-white text-blue-600 px-6 sm:px-8 py-3 rounded-lg hover:bg-blue-50 transition duration-300 inline-block"
             >
               Entrar em Contato
             </Link>
