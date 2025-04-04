@@ -1,6 +1,7 @@
 import Navigation from './Navigation';
 import JsonLd from './JsonLd';
 import Footer from './Footer';
+import { Container } from './ui/Container';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -17,9 +18,9 @@ export default function Layout({ children }: LayoutProps) {
       </header>
       
       <main className="flex-grow">
-        <div className="container mx-auto px-4 py-8">
+        <Container className="py-8">
           {children}
-        </div>
+        </Container>
       </main>
       
       <footer className="bg-gray-100 dark:bg-gray-800">

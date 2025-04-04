@@ -1,3 +1,9 @@
+export interface SocialLinks {
+  github: string;
+  linkedin: string;
+  email: string;
+}
+
 export interface Profile {
   name: string;
   title: string;
@@ -6,10 +12,5 @@ export interface Profile {
   about: string;
   objectives: string;
   available: boolean;
-  social: {
-    github?: string;
-    linkedin?: string;
-    twitter?: string;
-    email?: string;
-  };
+  social: SocialLinks;
 } 

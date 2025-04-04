@@ -1,13 +1,13 @@
-import Link from 'next/link';
+import { Container } from './ui/Container';
 
 export default function Footer() {
   return (
     <footer className="py-8">
-      <div className="container mx-auto px-4">
+      <Container>
         <div className="text-center text-gray-600 dark:text-gray-300">
           © {new Date().getFullYear()} Hugo Ferreira - Desenvolvedor Java Júnior
         </div>
-      </div>
+      </Container>
     </footer>
   );
 } 
