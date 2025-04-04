@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://hugoleao02.github.io/sitemap.xml 
+Sitemap: https://hugoferreira.dev/sitemap.xml 
