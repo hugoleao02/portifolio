@@ -1,0 +1,31 @@
+{
+  "default": {
+    "title": "Hugo Ferreira - Desenvolvedor Java Júnior | Spring Boot | Contagem-MG",
+    "description": "Desenvolvedor Java Júnior em Contagem-MG, especializado em Spring Boot, APIs RESTful, PostgreSQL e Kafka. Experiência em desenvolvimento de sistemas distribuídos e arquitetura limpa.",
+    "keywords": "Desenvolvedor Java Júnior, Spring Boot, Backend, API RESTful, PostgreSQL, MySQL, Kafka, Docker, Contagem-MG, Minas Gerais, Clean Architecture, Design Patterns, Microservices, SOLID, Elasticsearch, Group Software",
+    "author": "Hugo Ferreira",
+    "image": "/images/profile.png",
+    "url": "https://hugoleao02.github.io",
+    "type": "website"
+  },
+  "projects": {
+    "title": "Projetos | Hugo Ferreira - Desenvolvedor Java Júnior",
+    "description": "Portfólio de projetos desenvolvidos por Hugo Ferreira, Desenvolvedor Java Júnior em Contagem-MG. Experiência em Spring Boot, Kafka, PostgreSQL e desenvolvimento de sistemas distribuídos.",
+    "keywords": "Projetos Java, Spring Boot, Kafka, PostgreSQL, Sistemas Distribuídos, Desenvolvedor Java Júnior, Contagem-MG, Group Software, Clean Architecture, APIs RESTful"
+  },
+  "skills": {
+    "title": "Habilidades | Hugo Ferreira - Desenvolvedor Java Júnior",
+    "description": "Habilidades técnicas de Hugo Ferreira, Desenvolvedor Java Júnior: Spring Boot, PostgreSQL, Kafka, Docker, Clean Architecture. Experiência em desenvolvimento de sistemas escaláveis.",
+    "keywords": "Java, Spring Boot, PostgreSQL, MySQL, Kafka, Docker, Clean Architecture, Design Patterns, Microservices, SOLID, Desenvolvedor Java Júnior, Contagem-MG, Group Software"
+  },
+  "experience": {
+    "title": "Experiência | Hugo Ferreira - Desenvolvedor Java Júnior",
+    "description": "Experiência profissional de Hugo Ferreira como Desenvolvedor Java Júnior na Group Software, Contagem-MG. Desenvolvimento de APIs RESTful, integração com Kafka e PostgreSQL.",
+    "keywords": "Group Software, Desenvolvedor Java Júnior, APIs RESTful, PostgreSQL, MySQL, Kafka, Sistemas Distribuídos, Scrum, Kanban, Contagem-MG, Spring Boot, Clean Architecture"
+  },
+  "contact": {
+    "title": "Contato | Hugo Ferreira - Desenvolvedor Java Júnior",
+    "description": "Entre em contato com Hugo Ferreira, Desenvolvedor Java Júnior em Contagem-MG, especializado em Spring Boot, APIs RESTful e desenvolvimento de sistemas escaláveis.",
+    "keywords": "Contato, Desenvolvedor Java Júnior, Spring Boot, Backend, Programador, Contagem-MG, Minas Gerais, Group Software"
+  }
+} 

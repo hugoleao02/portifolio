@@ -1,3 +1,5 @@
+'use client';
+
 import { motion } from 'framer-motion';
 import { COLORS, SIZES, ANIMATIONS } from '../styles';
 import Button from './components/ui/Button';

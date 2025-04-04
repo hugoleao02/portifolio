@@ -1,3 +1,15 @@
+# Portfólio de [Seu Nome] - Desenvolvedor Full Stack
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/seu-perfil)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/seu-usuario)
+
+## Sobre o Projeto
+
+Este é o meu portfólio profissional, desenvolvido com Next.js, onde apresento meus projetos, habilidades e experiência como desenvolvedor. O site foi construído com foco em performance, acessibilidade e SEO.
+
+### Palavras-chave relevantes
+Desenvolvedor Full Stack, Front-end, Back-end, React, Next.js, TypeScript, JavaScript, Web Development, Portfolio, Programador, Desenvolvedor Web
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

@@ -7,5 +7,7 @@ export const useProjects = (): Project[] => {
 };
 
 export const useFeaturedProjects = (): Project[] => {
-  return projectsData.projects.filter((project: Project) => project.featured);
+  return projectsData.projects
+    .filter((project: Project) => project.featured)
+    .slice(0, 3);
 }; 

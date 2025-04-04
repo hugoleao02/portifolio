@@ -4,6 +4,7 @@ import { COLORS, SIZES, ANIMATIONS } from '../../../styles';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Button from '../ui/Button';
+import Link from 'next/link';
 
 interface ProjectCardProps {
   project: Project;
@@ -72,9 +73,15 @@ export const Projects = () => {
               Projetos Destacados
             </span>
           </h2>
-          <p className={`${SIZES.text.base} ${COLORS.secondary.text}`}>
+          <p className={`${SIZES.text.base} ${COLORS.secondary.text} mb-6`}>
             Alguns dos meus trabalhos mais recentes
           </p>
+          <Link 
+            href="/projects" 
+            className={`inline-block ${COLORS.primary.text} hover:opacity-80 transition-opacity`}
+          >
+            Ver todos os projetos →
+          </Link>
         </motion.div>
 
         <motion.div

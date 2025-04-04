@@ -1,0 +1,45 @@
+{
+  "experiences": [
+    {
+      "position": "Desenvolvedor Java Júnior",
+      "company": "Group Software",
+      "period": "2023 - Presente",
+      "location": "Contagem, Minas Gerais",
+      "icon": "💻",
+      "achievements": [
+        "Desenvolvimento de APIs RESTful com Spring Boot",
+        "Implementação de microsserviços com Kafka",
+        "Modelagem de banco de dados PostgreSQL",
+        "Aplicação de Clean Architecture"
+      ],
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "PostgreSQL",
+        "Kafka",
+        "Docker",
+        "Clean Architecture"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "course": "Ciência da Computação",
+      "institution": "Universidade Federal de Minas Gerais",
+      "period": "2020 - 2024",
+      "duration": "4 anos"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Java Developer",
+      "issuer": "Oracle",
+      "date": "2023"
+    },
+    {
+      "title": "Spring Boot Fundamentals",
+      "issuer": "Udemy",
+      "date": "2023"
+    }
+  ]
+} 
